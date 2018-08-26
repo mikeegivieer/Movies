@@ -1,0 +1,40 @@
+
+.container{
+  display: grid;
+  grid-template: 100px  1fr / 150px 1fr;
+  grid-gap: 10px;
+  height: 100vh;
+  grid-template-areas: "header header header header"
+                       "left contenido contenido contenido";
+
+}
+.movie-container{
+  display: grid;
+  grid-template:  1fr 1fr 1fr/ 1fr 1fr 1fr;
+  grid-gap: 10px;
+  height: 100vh;
+}
+
+.item{
+  background: lightblue;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.logotipo{
+  margin: 0;
+}
+
+.header{
+  grid-area: header;
+  position: relative;
+  display: flex;
+}
+
+.contenido{
+  grid-area: contenido;
+}
+
+.left{
+  grid-area: left;
+}
